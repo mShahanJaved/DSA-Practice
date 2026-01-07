@@ -7,7 +7,7 @@ int main()
   cin.ignore();
   cin.getline(arr, 30);
   int length = 0;
-  whiel(arr[length]!=0)
+  whiel(arr[length]!='\0')
     {
     length++;
     }
