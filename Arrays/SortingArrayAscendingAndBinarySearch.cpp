@@ -44,7 +44,7 @@ int main()
 		}
 	}
 	cout << endl;
-	cout << endl;
+	
 	cout << "The Sorted Array is: ";
 	for (int i = 0; i < size; i++)
 	{
@@ -58,6 +58,7 @@ int main()
 	bool found = false;
 	while (left <= right)
 	{
+		comparisons++;
 		mid = (left + right) / 2;
 		if (array[mid] == target)
 		{
@@ -73,7 +74,7 @@ int main()
 			left = mid + 1;
 		}
 	}
-
+	cout << endl;
 	if (found)
 	{
 		cout << "Target Found: " << target << " at index: " << mid << endl;
@@ -82,5 +83,7 @@ int main()
 	{
 		cout << "Not Found" << endl;
 	}
+	cout << endl;
+	cout << "The Comparisons are: " << comparisons << endl;
 	return 0;
 }
